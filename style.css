@@ -1,0 +1,54 @@
+body{
+    background-size: cover;
+    background-position: center;
+}
+.heading
+{
+font-size: 23px;
+width: 100%;
+margin: 0px;
+}
+
+#status,#number_of_objects
+{
+    cursor: not-allowed;
+    font-size: 18px;
+}
+.object_heading{
+    margin-top: 0px;
+    width: 100%;
+    cursor: none;
+    font-size: 35px;
+    font-weight: bold;
+}
+.object_heading:hover{
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;    
+}
+canvas{
+    cursor: not-allowed;
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    from{
+    width: 50%;
+    font-size: 35px;
+    border: 10px double #0345fc;
+    box-shadow: 10px 10px 8px #03adfc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    to{
+    width: 90%;
+    font-size: 55px;
+    border: 13px double #03c2fc;
+    box-shadow: 10px 10px 8px #e3fc03;
+    font-family: 'Style Script', cursive;}
+}
+@keyframes example2{
+    from{border-radius: 0%; border: 7px groove #5d5f66; box-shadow: 10px 10px 8px #03adfc;}
+    to{border-radius: 10% ; border: 20px double #10181b; box-shadow: 10px 10px 8px #e3fc03;}
+}
+
